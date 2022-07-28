@@ -28,7 +28,6 @@ h1,h2,h3,h4,h5,h6{
   margin: 0 100px;
 }
 .section{
-  width: 100%;
   max-width: 1400px;
   height: auto;
   margin: 0 auto;
@@ -161,7 +160,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .container--wall{
   margin:0 140px;
-  width: 100%;
+
 }
 .logos__background{
   width: 1173px;
@@ -260,6 +259,10 @@ h1,h2,h3,h4,h5,h6{
   font-size: 20px;
   line-height: 36px;
   color: var(--dark-blue);
+  transition: .1s linear;
+}
+.item__link:hover{
+  font-weight: 900;
 }
 
 
@@ -348,6 +351,11 @@ h1,h2,h3,h4,h5,h6{
   padding: 16px 56px;
   border-radius: 56px;
   border: 2px solid var(--dark-blue);
+  transition: .1s linear;
+}
+.customers__btn:hover{
+  border: 2px solid white;
+  background-color:#0A265f;
 }
 
 .tab__group{
@@ -544,6 +552,10 @@ h1,h2,h3,h4,h5,h6{
 }
 .articles__item{
   width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
 }
 .articles{
   display: flex;
@@ -552,7 +564,7 @@ h1,h2,h3,h4,h5,h6{
 .articles__text{
   display: flex;
   gap: 12px;
-  padding-top: 24px;
+  /* padding-top: 12px; */
 }
 .art__title{
   font-weight: 700;
@@ -571,7 +583,7 @@ h1,h2,h3,h4,h5,h6{
   font-size: 20px;
   line-height: 32px;
   color: black;
-  padding: 12px 0 50px;
+  height: 120px;
 }
 .articles__author{
   display: flex;
@@ -596,6 +608,11 @@ h1,h2,h3,h4,h5,h6{
   border-radius: 56px;
   color: var(--dark-blue);
   cursor: pointer;
+  transition: .1s linear;
+}
+.art__btn:hover{
+  background-color: var(--dark-blue);
+  color: var(--white);
 }
 
 
@@ -642,6 +659,9 @@ h1,h2,h3,h4,h5,h6{
 .bottom__input input::placeholder{
   color: black;
 }
+.bottom__input input:hover{
+  border: 4px solid black;
+}
 .bot__btn{
   border: 2px solid var(--green);
   border-radius: 56px;
@@ -652,8 +672,13 @@ h1,h2,h3,h4,h5,h6{
   line-height: 28px;
   color: var(--dark-blue);
   cursor: pointer;
+  transition: .1s linear;
 }
-
+.bot__btn:hover{
+  background-color:darkslateblue;
+  color: white;
+  border: 2px solid darkslateblue;
+}
 
 .bottom__circle{
   width: 1293px;
@@ -721,8 +746,12 @@ h1,h2,h3,h4,h5,h6{
   font-size: 20px;
   line-height: 32px;
   color: var(--gray);
+  transition: color .1s linear;
 }
-
+.col__link:hover{
+  color: black;
+  text-decoration: underline;
+}
 .hiring{
   display: flex;
   gap: 10px;
